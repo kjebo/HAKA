@@ -1,1 +1,2 @@
 # HAKA
+This is us showing our experience in Ansible, Docker, CI/CD pipelines, Git, Jenkins, Kubernetes, TDD, Python, Bash, Powershell, Ethical Hacking, Pentesting and working Agile at the same time. Our goal is to automate pentesting so we can unleash HAKA in CTF competitions online.
