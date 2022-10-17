@@ -1,0 +1,18 @@
+<h1> HAKA Management Console.</h1> 
+<p> To start reconnaissance, enter the IP address or domain name of the target machine.</p>
+<form action="{{ url_for("gfg")}}" method="post">
+<label for="ip">IP-address:</label>
+<input type="text" id="ip" name="ip" placeholder="IP-address">
+<label for="domain">Domain name:</label>
+<input type="text" id="domain" name="domain" placeholder="Domain name ">
+<button type="submit">GO!</button>
+<button type="reset">Reset</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<FONT SIZE="2"> - The IP address will be checked on RIPE.net to verify the owner and possible domain names.<br>
+     - The domain name will be checked with dnsdumster to find associated ip addresses.<br>
+     - A list of IP addresses associated with the owner that can be attacked will be displayed
+</FONT>

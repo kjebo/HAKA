@@ -1,0 +1,30 @@
+[*] Processing domain cfigroup.se
+[*] Using system resolvers: 127.0.0.53
+[+] Getting nameservers
+93.188.0.20 - ns1.loopia.se
+93.188.0.21 - ns2.loopia.se
+[-] Zone transfer failed
+
+[+] IPv6 (AAAA) records found. Try running dnscan with the [32m-6 [0moption.
+2a02:250:0:8::52
+[+] TXT records found
+"1viivk2ohp5pc10sgg4rhblbnv"
+"MS=ACBEE7A971B78FB00B3D7694775D1EC76824B8A8"
+"v=spf1 ip4:193.15.26.122 -all"
+[+] DMARC records found
+"v=DMARC1; p=quarantine; rua=mailto:hardy.holm@cfigroup.se; ruf=mailto:hardy.holm@cfigroup.se; pct=100;"
+[+] DNSSEC enabled and validated
+[+] MX records found, added to target list
+10 mail.cfigroup.se.
+[-] Wildcard domain found - [33m*.cfigroup.se[0m (194.9.94.85)
+[-] Wildcard domain found - [33m*.cfigroup.se[0m (194.9.94.86)
+[*] Scanning cfigroup.se for A records
+93.188.2.53 - cfigroup.se
+193.15.26.122 - autodiscover.cfigroup.se
+62.84.196.3 - info.cfigroup.se
+127.0.0.1 - localhost.cfigroup.se
+193.15.26.122 - mail.cfigroup.se
+193.15.26.117 - portal.cfigroup.se
+193.15.26.116 - secure.cfigroup.se
+213.136.79.16 - test.cfigroup.se
+93.188.2.53 - www.cfigroup.se
