@@ -16,8 +16,8 @@
 [+] DNSSEC enabled and validated
 [+] MX records found, added to target list
 10 mail.cfigroup.se.
-[-] Wildcard domain found - [33m*.cfigroup.se[0m (194.9.94.85)
 [-] Wildcard domain found - [33m*.cfigroup.se[0m (194.9.94.86)
+[-] Wildcard domain found - [33m*.cfigroup.se[0m (194.9.94.85)
 [*] Scanning cfigroup.se for A records
 93.188.2.53 - cfigroup.se
 193.15.26.122 - autodiscover.cfigroup.se

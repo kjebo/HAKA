@@ -10,8 +10,8 @@ import re
 
 nm = nmap.PortScanner()
 
-#ip = "62.63.215.64"
-ip = "193.15.26.122"
+ip = "62.63.215.64"
+#ip = "193.15.26.122"
 obj = IPWhois(ip)
 results = obj.lookup_rdap(depth=1)
 
@@ -30,4 +30,4 @@ with open('ip.txt','a') as f:
 hosts_list = [(x, nm[x]['status']) for x in nm.all_hosts()]
 print(hosts_list)
 
-print(scan_this)
+#print(scan_this)
