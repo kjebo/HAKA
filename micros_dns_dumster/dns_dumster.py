@@ -70,7 +70,7 @@ class scanner(threading.Thread):
                     print('\033[K\r', end='')
                     print(domain + " - " + col.brown + ns0 + col.end)
                     if outfile:
-                        print(ns0 + " - " + domain, file=outfile)
+                        ...#print(ns0 + " - " + domain, file=outfile)
                 if args.tld:
                     if res:
                         print('\033[K\r', end='')
@@ -92,9 +92,11 @@ class scanner(threading.Thread):
                         print(address + " - " + col.brown + domain + col.end)
                     if outfile:
                         if args.domain_first:
-                            print(domain + " - " + address, file=outfile)
+                            ...#print(domain + " - " + address, file=outfile)
                         else:
-                            print(address + " - " + domain, file=outfile)
+                            #print(address + " - " + domain, file=outfile)
+                            print({address:domain}, file=outfile)  #HÄR
+ 
                     try:
                         addresses.add(ipaddr(unicode(address)))
                     except NameError:
@@ -130,28 +132,28 @@ class output:
     def status(self, message):
         print(col.blue + "[*] " + col.end + message)
         if outfile and not args.quick:
-            print("[*] " + message, file=outfile)
+            ...#print("[*] " + message, file=outfile)
 
     def good(self, message):
         print(col.green + "[+] " + col.end + message)
         if outfile and not args.quick:
-            print("[+] " + message, file=outfile)
+            ...#print("[+] " + message, file=outfile)
 
     def verbose(self, message):
         if args.verbose:
             print(col.brown + "[v] " + col.end + message)
             if outfile and not args.quick:
-                print("[v] " + message, file=outfile)
+                ...#print("[v] " + message, file=outfile)
 
     def warn(self, message):
         print(col.red + "[-] " + col.end + message)
         if outfile and not args.quick:
-            print("[-] " + message, file=outfile)
+            ...#print("[-] " + message, file=outfile)
 
     def fatal(self, message):
         print("\n" + col.red + "FATAL: " + message + col.end)
         if outfile and not args.quick:
-            print("FATAL " + message, file=outfile)
+            ...#print("FATAL " + message, file=outfile)
 
 
 class col:
@@ -210,7 +212,7 @@ def get_v6(target):
         for v6 in res:
             print(str(v6) + "\n")
             if outfile:
-                print(v6, file=outfile)
+                ...#print(v6, file=outfile)
     except:
         return
 
@@ -223,7 +225,7 @@ def get_txt(target):
         for txt in res:
             print(txt)
             if outfile:
-                print(txt, file=outfile)
+                ...#print(txt, file=outfile)
         print("")
     except:
         return
@@ -237,7 +239,7 @@ def get_dmarc(target):
         for dmarc in res:
             print(dmarc)
             if outfile:
-                print(dmarc, file=outfile)
+                ...#print(dmarc, file=outfile)
         print("")
     except:
         return
@@ -280,7 +282,7 @@ def get_mx(target):
     for mx in res:
         print(mx.to_text())
         if outfile:
-            print(mx.to_text(), file=outfile)
+            ...#print(mx.to_text(), file=outfile)
         mxsub = re.search("([a-z0-9\.\-]+)\."+target, mx.to_text(), re.IGNORECASE)
         try:
             if mxsub.group(1) and mxsub.group(1) not in wordlist:
@@ -301,7 +303,7 @@ def zone_transfer(domain, ns, nsip):
         for n in names:
             print(zone[n].to_text(n))    # Print raw zone
             if outfile:
-                print(zone[n].to_text(n), file=outfile)
+                ...#print(zone[n].to_text(n), file=outfile)
         sys.exit(0)
     except Exception:
         pass
@@ -480,7 +482,7 @@ if __name__ == "__main__":
                             print(nsip + " - " + col.brown + ns + col.end)
                             if not args.quick:
                                 if outfile:
-                                    print(nsip + " - " + ns, file=outfile)
+                                    ...#print(nsip + " - " + ns, file=outfile)
                         zone_transfer(target, ns, nsip)
                 except SystemExit:
                     sys.exit(0)
