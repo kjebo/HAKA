@@ -1,9 +1,0 @@
-93.188.2.53=cfigroup.se
-193.15.26.122=autodiscover.cfigroup.se
-62.84.196.3=info.cfigroup.se
-127.0.0.1=localhost.cfigroup.se
-193.15.26.122=mail.cfigroup.se
-193.15.26.117=portal.cfigroup.se
-193.15.26.116=secure.cfigroup.se
-213.136.79.16=test.cfigroup.se
-93.188.2.53=www.cfigroup.se
