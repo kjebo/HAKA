@@ -95,7 +95,7 @@ class scanner(threading.Thread):
                             ...#print(domain + " - " + address, file=outfile)
                         else:
                             #print(address + " - " + domain, file=outfile)
-                            print({address:domain}, file=outfile)  #HÄR
+                            print(f"{address}={domain}", file=outfile)  #HÄR
  
                     try:
                         addresses.add(ipaddr(unicode(address)))
